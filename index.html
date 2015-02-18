@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<meta charset="utf-8">
+		<title>eeeeeeee</title>
+
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+		<script type="text/javascript" src="eeeeeeee.js"></script>
+
+		<script type="text/javascript">
+			window.setInterval(function(){
+				var time = new Date();
+				e_toElement(document.getElementById("hour"),   to_base8(time.getHours()));
+				e_toElement(document.getElementById("minute"), to_base8(time.getMinutes()));
+				e_toElement(document.getElementById("second"), to_base8(time.getSeconds()));
+				e_toElement(document.getElementById("day"),    to_base8(time.getDate()));
+				e_toElement(document.getElementById("month"),  to_base8(time.getMonth()));
+				e_toElement(document.getElementById("year"),   to_base8(time.getFullYear()));
+			}, 1000);
+		</script>
+	</head>
+	<body>
+		<noscript>Please enable JS</noscript>
+		<div id="content">
+			<div id="time">
+				<span id="hour"></span>:<span id="minute"></span>: <span id="second"></span>
+			</div>
+			<div id="date">
+				<span id="day"></span>. <span id="month"></span>. <span id="year"></span>
+			</div>
+		</div>
+	</body>
+</html>
